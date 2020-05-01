@@ -1,0 +1,49 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    width: 90%;
+    border-bottom: 1px solid #96949429;
+    left: 5%;
+    top: 1em;
+    padding-bottom: 1em;
+    .logo {
+        left: -45%;
+        color: white;
+        font-weight: bold;
+        border-bottom: 2px solid white;
+        position: relative;
+        padding-bottom: 3px;
+        letter-spacing: 1px;
+        font-size: 15px;
+    }
+    #left {
+        a {
+            color: white;
+            font-size: 10px;           
+            letter-spacing: 3px;
+            text-decoration: none;
+            margin-right: 4em;
+        }
+    }
+    #right {
+        display: flex;
+        align-items: center;
+        a {
+            color: rgb(94, 94, 94);
+            font-size: 10px;
+            letter-spacing: 3px;
+            font-weight: bold;
+            text-decoration: none;
+            margin-right: 4em;
+            
+        }
+        img {
+            width: 15px;
+            height: 15px;
+            margin-right: 3em;
+            filter: invert(38%) sepia(13%) saturate(12%) hue-rotate(341deg) brightness(90%) contrast(87%);
+        }
+        
+    }
+}

@@ -3,7 +3,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   entry: {
-    main: ['./src/index.js'],
+    main: ['./src/controller/dashboard.js','./src/controller/carrousel.js'],
   },
   output: {
     filename: 'main.js',
@@ -31,6 +31,14 @@ module.exports = {
           'file-loader',
         ],
       },
+      {
+        test: /\.(jpg|png|gif|svg)$/,
+        loader: 'image-webpack-loader',
+        // Specify enforce: 'pre' to apply the loader
+        // before url-loader/svg-url-loader
+        // and not duplicate it in rules with them
+        enforce: 'pre'
+      }
     ],
   },
 };

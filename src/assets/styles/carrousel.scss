@@ -1,0 +1,149 @@
+.content {
+    display: flex;
+    height: 101.3%;
+    .carrousel-container {
+        height: 100%;
+        width: 65%;
+        .img-carrousel {
+            background-image: url(../imgs/img1.jpg);
+            background-size: cover;
+            height: 90%;
+        }
+        .mini-footer {
+            color: white;
+            background-color: #060606;
+            display: flex;
+            height: 10%;
+            .article-container {
+                display: flex;
+                align-items: center;
+                padding: 1em;
+                .footer-img {
+                    width: 3.5em;
+                    height: 2em;
+                    margin-right: 1em;
+                }
+                h3 {
+                    font-size: 6px;
+                    color: #767373;
+                    letter-spacing: 2px;
+                    margin-bottom: 4px;
+                }   
+                p {
+                    font-size: 10px;
+                }
+                #img1 {
+                    background-image: url(../imgs/img2.jpg);
+                    background-size: cover;
+                }
+                #img2 {
+                    background-image: url(../imgs/img3.jpg);
+                    background-size: cover;
+                }
+                #img3 {
+                    background-image: url(../imgs/img4.jpg);
+                    background-size: cover;
+                }
+            }
+        }
+        
+    }
+    
+    /*   ASIDE   */
+    
+    aside {
+        width: 50%;
+        margin-top: 6%;
+        
+        .aside-container {
+            padding: 3em;
+            h1 {
+                padding: 0 4em 0 0;
+                font-size: 2em;
+            }
+            h2 {
+                font-size: 16px;
+                margin-bottom: 15px;
+                color: #b0adad;
+            }
+            #author {
+                margin: 6px 0 13px;
+                display: flex;
+                align-items: center;
+                img {
+                    border-radius:50%;
+                    width: 20px;
+                    height: 20px;
+                }
+                .author {
+                    letter-spacing: 3px;
+                    font-size: 10px;
+                    color: rgb(250, 130, 117);
+                    margin-left: 5px;
+                }
+            }
+            .content-article {
+                display: flex;
+                p {
+                    font-size: 13px;
+                }
+                .social {
+                    img {
+                        width: 20px;
+                        height: 20px;
+                    }
+                }
+            }
+            .see-article {
+                margin-top: 10px;
+                display: flex;
+                align-items: center;
+                margin-top: 5px;
+                
+                a {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 50%;
+                    width: 25px;
+                    height: 25px;
+                    background: rgb(250, 130, 117);
+                    margin-right: 10px;
+                    img {
+                        width: 10px;
+                        height: 15px;
+                        filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(294deg) brightness(104%) contrast(102%);
+                        
+                    }
+                }
+                p {
+                    font-size: 10px;           
+                    letter-spacing: 3px;
+                    text-decoration: none;
+                }
+            }
+            .next-previous {
+                display: flex;
+                position: relative;
+                top: 3em;
+                div {
+                    img {
+                        border-radius: 50%;
+                        width: 20px; 
+                        height: 20px;
+                        margin-right: 1em;
+                        }
+                    }
+                }
+            }
+        }       
+        .carrousel {
+            display: flex;
+            img {
+                width: 33.3%;
+                height: 33.3%;
+            }
+        }
+    
+
+}
