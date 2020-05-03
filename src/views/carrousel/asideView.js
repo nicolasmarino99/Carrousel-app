@@ -16,7 +16,7 @@ export const asideView = () => {
                                     <div class="social">
                                         <img src="/src/assets/imgs/facebook.svg" alt="">
                                         <img src="/src/assets/imgs/instagram.svg" alt="">
-                                        <img src="/src/assets/imgs/twiter.svg" alt="">
+                                        <img src="/src/assets/imgs/twitter.svg" alt="">
                                     </div>
                                 </div>
                                 <div class="see-article">
@@ -29,9 +29,9 @@ export const asideView = () => {
                                 </div>
                             </div>    
                             <div class="carrousel">
-                                <img src="/src/assets/imgs/img1.jpg" alt="">
                                 <img src="/src/assets/imgs/img2.jpg" alt="">
                                 <img src="/src/assets/imgs/img3.jpg" alt="">
+                                <img src="/src/assets/imgs/img4.jpg" alt="">
                             </div>
                         </aside>`
     return asideViewHTML
