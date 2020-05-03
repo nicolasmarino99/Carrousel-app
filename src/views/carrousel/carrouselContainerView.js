@@ -1,6 +1,6 @@
-export const carrouselContainerView = () => {
-    const carrouselContainerViewHTML =  `<div class="carrousel-container">
-                                            <div class="img-carrousel">
+export const carrouselContainerView = (database) => {
+    const carrouselContainerViewHTML =  `<div class="carrousel-container" >
+                                            <div class="img-carrousel" id="${database.img}">
                                             </div>
                                             <div class="mini-footer">
                                             <div class="article-container">

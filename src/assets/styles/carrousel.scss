@@ -4,10 +4,25 @@
     .carrousel-container {
         height: 100%;
         width: 65%;
-        .img-carrousel {
-            background-image: url(../imgs/img1.jpg);
+        #img1 {
+            background-image: url(../imgs/img1.jpg); 
             background-size: cover;
             height: 90%;
+        }
+        #img2 {
+            background-image: url(../imgs/img2.jpg); 
+            background-size: cover;
+            height: 90%; 
+        }
+        #img3 {
+            background-image: url(../imgs/img3.jpg); 
+            background-size: cover;
+            height: 90%; 
+        }
+        #img4 {
+            background-image: url(../imgs/img4.jpg); 
+            background-size: cover;
+            height: 90%; 
         }
         .mini-footer {
             color: #c0c0c0;
@@ -70,6 +85,7 @@
                 margin: 6px 0 13px;
                 display: flex;
                 align-items: center;
+                text-transform: uppercase;
                 img {
                     border-radius:50%;
                     width: 20px;

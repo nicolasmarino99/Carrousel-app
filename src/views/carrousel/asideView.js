@@ -1,18 +1,19 @@
-export const asideView = () => {
+export const asideView = (database) => {
+    console.log(database)
     const asideViewHTML =  `
                         <aside>
                             <div class="aside-container">
                                 <div class="title">
                                     <h2 class="category">Style/News</h2>
-                                    <h1>The Milan Fashion Week Crowd Really Nailed It in the Detailes Department</h1>
+                                    <h1>${database.title}</h1>
                                 </div>    
                                 <div id="author">
                                     <img src="/src/assets/imgs/img1.jpg" alt="">
-                                    <div class="author">BY DANNY SCHWARTZ</div>
+                                    <div class="author">by ${database.author}</div>
                                 </div>
                                 <div class="content-article">
-                                    <p>A lot of armchair contract law expert have come out of the woodwork this week to comment on the rapidly escalating.</p>
-                                    <p>Regardless of what anyone actually knows about record contracts, rap fans are justifial concerned for megan</p>
+                                    <p>${database.p1}</p>
+                                    <p>${database.p2}</p>
                                     <div class="social">
                                         <img src="/src/assets/imgs/facebook.svg" alt="">
                                         <img src="/src/assets/imgs/instagram.svg" alt="">
