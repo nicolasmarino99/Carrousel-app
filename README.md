@@ -2,7 +2,7 @@
 
 In this project I created a simple carrousel app.
 
-![screenshot](./src/assets/images/carrousel1.jpg)
+![screenshot](./src/assets/imgs/carrousel1.jpg)
 
 ## Built With
 
