@@ -4,6 +4,8 @@ In this project I created a simple carrousel app.
 
 ![screenshot](./src/assets/imgs/carrousel1.jpg)
 
+Thanks to Martin Briceno for this beautiful [UI](https://dribbble.com/shots/10726201-Highsnobiety-Style-Carrousel/attachments/2397276?mode=media)
+
 ## Built With
 
 - HTML5 
