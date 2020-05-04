@@ -14,11 +14,13 @@ In this project I created a simple carrousel app.
 
 ## Live Demo
 
-[Live Demo Link](https://rawcdn.githack.com/bruna-genz/todo-list/261fbc6ced78de846890be0e6197e822e24b3f57/dist/index.html)
+[Live Demo Link](https://rawcdn.githack.com/nicolasmarino99/Carrousel-app/b3722cafb000490d264c233d49bf1cff4a2a72d1/dist/index.html)
+- note:
+Unfortunaly the buttons are not working in this demo, however, you could use them by installing the repo in your local machine
 
 ## Getting Started
 
-Download or clone the project [here](https://github.com/bruna-genz/restaurant-page.git), then enter in the project's directory from the terminal and run the following comands:
+Download or clone the current project, then enter in the project's directory from the terminal and run the following comands:
 - `npm i`
 - `npm run start`
 
