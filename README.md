@@ -16,7 +16,7 @@ In this project I created a simple carrousel app.
 
 [Live Demo Link](https://rawcdn.githack.com/nicolasmarino99/Carrousel-app/b3722cafb000490d264c233d49bf1cff4a2a72d1/dist/index.html)
 - note:
-Unfortunaly the buttons are not working in this demo, however, you could use them by installing the repo in your local machine
+Unfortunally the buttons are not working in this demo, however, you could use them by installing the repo in your local machine
 
 ## Getting Started
 
