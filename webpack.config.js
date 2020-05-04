@@ -3,10 +3,13 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   entry: {
-    main: ['./src/controller/dashboard.js','./src/controller/carrousel.js'],
+    dashboard: './src/controller/dashboard.js',
+    carrousel: './src/controller/carrousel.js',
   },
   output: {
-    filename: 'main.js',
+    filename: '[name].[hash:8].js',
+    sourceMapFilename: '[name].[hash:8].map',
+    chunkFilename: '[id].[hash:8].js',
     path: path.resolve(__dirname, 'dist'),
   },
   plugins: [
@@ -29,6 +32,30 @@ module.exports = {
         test: /\.(png|svg|jpg|gif)$/,
         use: [
           'file-loader',
+          {
+            loader: 'image-webpack-loader',
+            options: {
+              mozjpeg: {
+                progressive: true,
+                quality: 9
+              },
+              // optipng.enabled: false will disable optipng
+              optipng: {
+                enabled: true,
+              },
+              pngquant: {
+                quality: [0.65, 0.90],
+                speed: 4
+              },
+              gifsicle: {
+                interlaced: false,
+              },
+              // the webp option will enable WEBP
+              webp: {
+                quality: 75
+              }
+            }
+          },
         ],
       },
       {
@@ -40,5 +67,10 @@ module.exports = {
         enforce: 'pre'
       }
     ],
+  },
+  optimization: {
+    splitChunks: {
+      chunks: 'all',
+    },
   },
 };

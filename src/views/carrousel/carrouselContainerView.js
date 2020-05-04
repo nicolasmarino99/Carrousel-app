@@ -1,7 +1,6 @@
 export const carrouselContainerView = (database) => {
     const carrouselContainerViewHTML =  `<div class="carrousel-container" >
-                                            <div class="img-carrousel" id="${database.img}">
-                                            </div>
+                                            <div class="img-carrousel" data-barba="container" data-barba-namespace="home" id="${database.img}-carrousel"> </div>
                                             <div class="mini-footer">
                                             <div class="article-container">
                                                 <div class="footer-img" id="img1"></div>

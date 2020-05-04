@@ -1,28 +1,44 @@
 .content {
     display: flex;
     height: 101.3%;
+    animation: desppear 2s ease; 
+@keyframes desappear { 100% {  opacity: 1; } 0% {  opacity: 0; } }
     .carrousel-container {
         height: 100%;
         width: 65%;
-        #img1 {
+        #img1-carrousel {
             background-image: url(../imgs/img1.jpg); 
             background-size: cover;
             height: 90%;
+            
+            animation:opac 1.4s;
+            @keyframes opac{from{opacity:0} to{opacity:1}}
+            
         }
-        #img2 {
+        #img2-carrousel {
             background-image: url(../imgs/img2.jpg); 
             background-size: cover;
             height: 90%; 
+            
+            
+            animation:opac 1.4s;
+            @keyframes opac{from{opacity:0} to{opacity:1}}
         }
-        #img3 {
+        #img3-carrousel {
             background-image: url(../imgs/img3.jpg); 
             background-size: cover;
             height: 90%; 
+            
+            animation:opac 1.4s;
+            @keyframes opac{from{opacity:0} to{opacity:1}}
         }
-        #img4 {
+        #img4-carrousel {
             background-image: url(../imgs/img4.jpg); 
             background-size: cover;
             height: 90%; 
+            
+            animation:opac 1.4s;
+            @keyframes opac{from{opacity:0} to{opacity:1}}
         }
         .mini-footer {
             color: #c0c0c0;
@@ -145,8 +161,8 @@
             }
             .next-previous {
                 display: flex;
-                position: relative;
-                top: 2em;
+                position: absolute;
+                bottom: 9em;
                 div {
                     img {
                         border-radius: 50%;
@@ -169,10 +185,33 @@
             display: flex;
             position: absolute;
             bottom: 0;
-            img {
+            height: 8em;
+            width: 43.5%;
+            .img1-item {
                 width: 33.3%;
-                height: 33.3%;
+                height: 100%;
+                background-image: url(../imgs/img1.jpg);
+                background-size: cover;
             }
+            .img2-item {
+                width: 33.3%;
+                height: 100%;
+                background-image: url(../imgs/img2.jpg);
+                background-size: cover;
+            }
+            .img3-item {
+                width: 33.3%;
+                height: 100%;
+                background-image: url(../imgs/img3.jpg);
+                background-size: cover;
+            }
+            .img4-item {
+                width: 33.3%;
+                height: 100%;
+                background-image: url(../imgs/img4.jpg);
+                background-size: cover;
+            }
+            
         }
     
 

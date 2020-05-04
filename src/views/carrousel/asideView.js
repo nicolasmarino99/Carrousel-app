@@ -1,11 +1,11 @@
-export const asideView = (database) => {
-    console.log(database)
+export const asideView = (database,database1,database2,database3) => {
+    
     const asideViewHTML =  `
                         <aside>
                             <div class="aside-container">
                                 <div class="title">
                                     <h2 class="category">Style/News</h2>
-                                    <h1>${database.title}</h1>
+                                    <h1 >${database.title}</h1>
                                 </div>    
                                 <div id="author">
                                     <img src="/src/assets/imgs/img1.jpg" alt="">
@@ -30,9 +30,12 @@ export const asideView = (database) => {
                                 </div>
                             </div>    
                             <div class="carrousel">
-                                <img src="/src/assets/imgs/img2.jpg" alt="">
+                               <!-- <img src="/src/assets/imgs/img2.jpg" alt="">
                                 <img src="/src/assets/imgs/img3.jpg" alt="">
-                                <img src="/src/assets/imgs/img4.jpg" alt="">
+                                <img src="/src/assets/imgs/img4.jpg" alt=""> -->
+                                <div class="${database1.img}-item"></div>
+                                <div class="${database2.img}-item"></div>
+                                <div class="${database3.img}-item"></div>
                             </div>
                         </aside>`
     return asideViewHTML
