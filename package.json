@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "styleModules": "npm install --save-dev css-loader favicons-webpack-plugin file-loader html-webpack-plugin sass sass-loader style-loader webpack-dev-server webpack-watched-glob-entries-plugin",
     "dev": "webpack webpack-dev-server --mode development --watch --open",
-    "build": "webpack --mode production && npm run styleModules && npx webpack --config webpack.config.js",
+    "installAll": "npm run styleModules && npx webpack --config webpack.config.js",
+    "build": "webpack --mode production",
     "start": "webpack-dev-server --mode development --open"
   },
   "repository": {
@@ -25,6 +26,7 @@
     "favicons-webpack-plugin": "^3.0.1",
     "file-loader": "^6.0.0",
     "html-webpack-plugin": "^4.3.0",
+    "image-webpack-loader": "^6.0.0",
     "sass": "^1.26.5",
     "sass-loader": "^8.0.2",
     "style-loader": "^1.2.1",
@@ -32,5 +34,9 @@
     "webpack-cli": "^3.3.11",
     "webpack-dev-server": "^3.10.3",
     "webpack-watched-glob-entries-plugin": "^2.1.5"
+  },
+  "dependencies": {
+    "@barba/core": "^2.9.7",
+    "gsap": "^3.2.6"
   }
 }

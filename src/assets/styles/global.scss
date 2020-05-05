@@ -1,0 +1,29 @@
+@import './nav.scss';
+@import './carrousel.scss';
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+    //background-color: rgb(238, 238, 238);
+    //overflow-y:hidden;
+}   
+
+body {
+    height: 94%;
+    overflow-y:hidden;
+    font-family: 'Lora', serif;
+    background-color: #f3f3f3;
+    
+}
+.root {
+    height: 105%;    
+}
+
+.hidden {
+    display: none;
+}
